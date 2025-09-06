@@ -3,14 +3,14 @@ E-mail: enis.kadiroglu@ogr.dpu.edu.tr
 
 Date: 06.09.2025
 
-###Patient Exploratory Data Analysis Report
-1. Executive Summary
+### Patient Exploratory Data Analysis Report
+# 1. Executive Summary
 
 This report outlines the preprocessing steps applied to the projectpus.xlsx dataset.
 The primary objective of preprocessing is to enhance data quality by removing duplicate records, addressing missing values, and transforming raw features into a structured format.
 These steps are essential to ensure that the dataset is consistent, reliable, and suitable for exploratory analysis as well as future machine learning applications.
 
-2. Data Cleaning and Preparation
+# 2. Data Cleaning and Preparation
 
 Removal of Duplicate Records
 
@@ -24,7 +24,7 @@ To avoid bias and redundancy in the analysis, duplicates were removed with:
 df.drop_duplicates()
 
 
-Missing Value Detection
+# Missing Value Detection
 
 Missing values were examined with:
 
@@ -43,7 +43,7 @@ Numeric values were extracted using regular expressions and stored in new variab
 
 This transformation enables statistical analysis and correlation measurement.
 
-3. Results and Observations
+# 3. Results and Observations
 
 The dataset became cleaner and more consistent after removing duplicate records.
 
@@ -51,7 +51,7 @@ Missing data remained an important challenge, particularly in health-related att
 
 Feature transformations allowed previously unusable text-based variables to be analyzed numerically.
 
-4. Conclusion and Recommendations
+# 4. Conclusion and Recommendations
 
 The preprocessing stage significantly improved the usability of the dataset.
 Key findings:
@@ -63,16 +63,16 @@ Structured Features: Text-based treatment duration and application duration were
 Remaining Challenge: High levels of missing data in certain medical variables should be addressed before advanced analysis.
 
 Recommendation: Future work should focus on missing data imputation, outlier detection, and normalization in order to prepare the dataset for predictive modeling.
-###DATA PRE PROCESS
+### DATA PRE PROCESS
 Data Preprocessing Pipeline Documentation
-1. Overview
+# 1. Overview
 
 This project is designed to perform a comprehensive preprocessing workflow on a medical dataset.
 The goal is to clean raw data and make it ready for machine learning models.
 
 The implementation is built on top of the Scikit-Learn Pipeline architecture, ensuring that preprocessing steps are consistent and reproducible.
 
-2. Libraries Used
+# 2. Libraries Used
 
 pandas, numpy → Data manipulation
 
@@ -80,8 +80,8 @@ scikit-learn → Pipeline, preprocessing, train/test splitting
 
 sys → Error handling
 
-3. Main Classes and Functions
-3.1 GuvenliEtiketleyici (Safe Label Encoder)
+# 3. Main Classes and Functions
+# 3.1 GuvenliEtiketleyici (Safe Label Encoder)
 
 A custom transformer compatible with Scikit-Learn
 
@@ -93,7 +93,7 @@ Unseen categories in the test set are encoded as -1
 
 Missing values are replaced with "EKSİK_DEGER" before encoding
 
-3.2 VeriOnIsleyici (Data Preprocessor)
+# 3.2 VeriOnIsleyici (Data Preprocessor)
 
 The core class for loading, cleaning, and preprocessing raw data
 
@@ -137,7 +137,7 @@ Produces training and test datasets
 veri_ozeti_goster(df, title)
 Displays dataset shape and missing value summary
 
-4. Workflow
+# 4. Workflow
 
 Load the data
 
@@ -168,7 +168,7 @@ X_train, X_test, y_train, y_test = processor.pipeline_olustur_ve_calistir(
     random_state=42
 )
 
-5. Example Output
+# 5. Example Output
 DATA PREPROCESSING PIPELINE STARTED
  Data loaded successfully. Shape: (350, 12)
 
@@ -189,7 +189,7 @@ Cinsiyet            5
 Pipeline executed successfully.
 
 PIPELINE COMPLETED
-========================================
+------------------------------
 RESULT SUMMARY
  Processed Training Data Shape: (272, 25)
  Processed Test Data Shape:    (68, 25)
@@ -199,7 +199,7 @@ RESULT SUMMARY
  You can now train machine learning models:
    Usage: model.fit(X_train, y_train)
 
-6. Conclusion
+# 6. Conclusion
 
 With this pipeline
 
