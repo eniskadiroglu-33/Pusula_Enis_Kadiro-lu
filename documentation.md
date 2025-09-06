@@ -63,7 +63,7 @@ Structured Features: Text-based treatment duration and application duration were
 Remaining Challenge: High levels of missing data in certain medical variables should be addressed before advanced analysis.
 
 Recommendation: Future work should focus on missing data imputation, outlier detection, and normalization in order to prepare the dataset for predictive modeling.
-### DATA PRE PROCESS
+###  DATA PRE PROCESS
 Data Preprocessing Pipeline Documentation
 # 1. Overview
 
