@@ -2,13 +2,13 @@
 
 This repository contains two complementary projects focusing on medical dataset exploration and machine learning preprocessing pipeline creation.
 
-The workflow is structured as:
+#The workflow is structured as:
 
 Exploratory Data Analysis (EDA): Understand the dataset, visualize patterns, and detect correlations.
 
 Data Preprocessing with Pipeline: Clean, transform, and prepare the dataset for machine learning models using a robust, reusable pipeline.
 
-Project 1: Exploratory Data Analysis (EDA)
+###Project 1: Exploratory Data Analysis (EDA)
 Overview
 
 The goal of this project is to explore and visualize a medical dataset containing information such as treatment duration, patient age, gender, and application times.
@@ -22,7 +22,7 @@ Converted treatment and application durations into numerical features
 
 Handled missing values
 
-Exploratory Analysis
+##Exploratory Analysis
 
 Treatment Sessions Distribution: Frequency counts of treatment session numbers
 
@@ -44,8 +44,8 @@ Correlation heatmap of numerical variables
 
 These plots help identify trends in treatment durations, age demographics, and gender-related patterns.
 
-Project 2: Data Preprocessing with Pipeline
-Overview
+###Project 2: Data Preprocessing with Pipeline
+#Overview
 
 This project implements a robust data preprocessing pipeline to prepare the dataset for machine learning models. It ensures reproducibility, scalability, and safe handling of categorical and numerical variables.
 
@@ -106,7 +106,7 @@ matplotlib, seaborn for visualization
 
 scikit-learn for preprocessing and pipeline construction
 
-Usage
+#Usage
 Run Exploratory Data Analysis
 python eda_script.py
 
@@ -116,7 +116,7 @@ python preprocessing_pipeline.py
 
 Both scripts can be adapted with different dataset paths by modifying the DOSYA_YOLU variable inside the code.
 
-Next Steps
+#Next Steps
 
 Integrate machine learning models (e.g., Logistic Regression, Random Forest, Gradient Boosting)
 
